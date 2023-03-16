@@ -201,6 +201,8 @@ main {
   margin-top: 4rem;
   display: flex;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -216,7 +218,13 @@ main {
 }
 
 #about .about-content h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #04483D;
+  margin-top: 1rem;
+}
+
+#about .about-content p{
+  font-size: 14px;
   color: #04483D;
   margin-top: 1rem;
 }
@@ -241,7 +249,7 @@ main {
 }
 
 #about  img {
-  max-width: 400px;
+  max-width: 100%;
   width: 100%;
   border-radius: 2rem;
 }
@@ -319,6 +327,12 @@ footer > small {
   /* CSS rules for screens ≥ 768px */
   main {
     max-width: 650px;
+  }
+  
+  #about  img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 2rem;
   }
 
   footer {
@@ -428,6 +442,14 @@ footer > small {
 
   .dish-card {
     max-width: 340px;
+  }
+
+  #about .about-content h3{
+    font-size: 2rem;
+  }
+  
+  #about .about-content p{
+    font-size: 1rem;
   }
 
   footer {
