@@ -1,0 +1,335 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.logo {
+  margin-top: 1.75rem; /*28px*/
+}
+
+.logo > img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+
+ul {
+  list-style: none;
+}
+
+nav {
+  margin-top: 3.25rem; /* 52px*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #04483D;
+  font-weight: 600;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+  padding: 0.5rem;
+  max-width: 340px;
+  margin: 6rem auto;
+}
+
+.promotional-banner {
+  background: linear-gradient(100.9deg, #04483D 1.7%, #087664 100.42%);
+  border-radius: 2.5rem;
+  padding: 1.5rem;
+  margin-bottom: 15rem;
+}
+
+.banner-content {
+  color: white;
+}
+
+.banner-content p {
+   margin-top: 1.5rem;
+   color: #e2e2e2;
+   font-size: 12px;
+}
+
+.banner-content > input {
+  margin-top: 2rem;  
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 90px;
+  border: none;
+  padding: 1rem 1rem 1rem 2.5rem;
+  width: 100%;
+  background: #FFFFFF url(./assets/search.png) no-repeat left center;
+  background-position-x: 15px;
+}
+
+.banner-image > img {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/* DISH CARDS - MENU SECTION*/
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rem;
+}
+
+.menu:last-child {
+  margin-bottom: 7rem;
+}
+
+.dish-card {
+  background-color: #04483D;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.dish-card > img{
+  position: absolute;
+  top: -150px;
+  left: 0;
+  right: 0;
+}
+
+.dish-empty {
+  width: 100%;
+  height: 100px;
+}
+
+.dish-name{
+  margin-top: 2rem;
+  display: block;
+  color: white;
+}
+
+.dish-card .dish-stars{
+  margin: 0.5rem 0;
+}
+
+.dish-card .dish-description{
+  color: #DADADA;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.read-more-btn{  
+  margin-top: 1.5rem;
+  background: #FE9000;
+  box-shadow: 0px 3.15758px 3.15758px rgba(0, 0, 0, 0.25);
+  padding: 0.8rem;
+  border-radius: 2rem;
+  display: block;
+  color: white;
+  font-size: 12px;
+  max-width: 120px;
+  text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(100.9deg, #F3F3F3 1.7%, #E9E9E9 100.42%);
+  border-radius: 42px 42px 0px 0px;
+  height: 200px;
+
+  max-width: 340px;
+  margin: 0 auto;
+
+  padding: 0.5rem;
+}
+
+footer > small {
+  color: #04483D;
+  font-weight: bold;
+}
+
+/* RESPONSIVE WEBSITE */
+
+@media screen and (min-width: 640px) {
+  /* CSS rules for screens ≥ 640px */
+  main {
+    max-width: 500px;
+  }
+  
+  .promotional-banner {
+    padding: 3rem;
+  }
+
+  .banner-content h2 {
+    font-size: 2.375rem
+  }
+
+  .banner-content p {
+    margin-top: 2rem;
+    font-size: 14px;
+  }
+
+  .banner-content > input {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+
+  .banner-image > img {
+      margin-top: 3rem;
+      width: 100%;
+  }
+
+  footer {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* CSS rules for screens ≥ 768px */
+  main {
+    max-width: 650px;
+  }
+
+  footer {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* CSS rules for screens ≥ 1024px */
+  main {
+    max-width: 980px;
+  }
+  
+  .promotional-banner {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .banner-content {
+    max-width: 500px;
+  }
+
+  .banner-content h2 {
+    font-size: 3.3rem;
+  }
+
+  .banner-content p {
+    margin-top: 1.2rem;
+    font-size: 13px;
+  }
+
+  .banner-content > input {
+    margin-top: 3rem;
+  }
+
+  .banner-image > img {
+      width: 100%;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+  }  
+
+  .menu:last-child {
+    margin-bottom: 0;
+  }
+
+  .dish-card {
+    max-width: 310px;
+  }
+
+  footer {
+    max-width: 980px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /* CSS rules for screens ≥ 1280px */
+  main {
+    max-width: 1080px;
+  }
+  
+  .promotional-banner {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .banner-content {
+    max-width: 500px;
+  }
+
+  .banner-content h2 {
+    font-size: 3.3rem;
+  }
+
+  .banner-content p {
+    margin-top: 1.2rem;
+    font-size: 13px;
+  }
+
+  .banner-content > input {
+    margin-top: 3rem;
+  }
+
+  .banner-image > img {
+      width: 100%;
+  }
+
+  .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:1rem;
+  }  
+
+  .dish-card {
+    max-width: 340px;
+  }
+
+  footer {
+    max-width: 1080px;
+  }
+}
