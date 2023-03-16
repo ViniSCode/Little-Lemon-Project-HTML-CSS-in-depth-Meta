@@ -396,6 +396,17 @@ footer > small {
   .dish-card {
     max-width: 310px;
   }
+  
+  .dish-card > img{
+    position: absolute;
+    width: 282px;
+    margin: 0 auto;
+    top: -150px;
+    left: 0;
+    right: 0;
+  }
+
+
 
   #about, #contact{
     margin: 4rem auto;
@@ -460,6 +471,16 @@ footer > small {
   #about .about-content p{
     font-size: 1rem;
   }
+
+  .dish-card > img{
+    position: absolute;
+    width: 282px;
+    margin: 0 auto;
+    top: -150px;
+    left: 0;
+    right: 0;
+  }
+
 
   footer {
     max-width: 1080px;
