@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  user-select: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,6 +50,12 @@ nav ul {
 nav ul li a {
   color: #04483D;
   font-weight: 600;
+  border: none;
+  transition: 0.2s all ease;
+}
+
+nav ul li a:hover {
+  color: #FE9000;
 }
 
 
@@ -89,9 +97,21 @@ main {
 }
 
 .banner-image > img {
-    margin-top: 3rem;
-    width: 100%;
+  margin-top: 3rem;
+  width: 100%;
+  animation: spin 15s linear infinite;
+  pointer-events: none
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* DISH CARDS - MENU SECTION*/
 
@@ -114,6 +134,8 @@ main {
 
 .dish-card > img{
   position: absolute;
+  width: 282px;
+  margin: 0 auto;
   top: -150px;
   left: 0;
   right: 0;
@@ -152,6 +174,76 @@ main {
   font-size: 12px;
   max-width: 120px;
   text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.read-more-btn:hover{  
+  background: #FFFFFF;
+  color: #FE9000;
+}
+
+
+/* ABOUT SECTION */
+#about {
+  margin: 7rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about  h2 {
+  color: #04483D;
+  font-size: 2rem;
+}
+
+#about article{
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#about .about-content {
+  max-width: 500px;
+}
+
+
+#about .about-content strong{
+  font-weight: bold;
+  color: #FE9000;
+  display: block;
+}
+
+#about .about-content h3{
+  font-size: 2rem;
+  color: #04483D;
+  margin-top: 1rem;
+}
+
+.learn-more-btn{  
+  margin-top: 2rem;
+  background: #FE9000;
+  box-shadow: 0px 3.15758px 3.15758px rgba(0, 0, 0, 0.25);
+  padding: 0.8rem;
+  border-radius: 2rem;
+  display: block;
+  color: white;
+  font-size: 12px;
+  max-width: 120px;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.learn-more-btn:hover{  
+  background: #04483D;
+  color: white;
+}
+
+#about  img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 2rem;
 }
 
 
@@ -206,6 +298,15 @@ footer > small {
   .banner-image > img {
       margin-top: 3rem;
       width: 100%;
+  }
+
+  .dish-card > img{
+    position: absolute;
+    width: 282px;
+    margin: 0 0;
+    top: -150px;
+    left: 0;
+    right: 0;
   }
 
   footer {
