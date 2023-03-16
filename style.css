@@ -6,6 +6,11 @@
   font-family: "Open Sans", sans-serif;
   user-select: none;
   scroll-behavior: smooth;
+  scroll-padding-top: 350px;
+}
+
+img {
+  pointer-events: none;
 }
 
 body {
@@ -100,7 +105,7 @@ main {
   margin-top: 3rem;
   width: 100%;
   animation: spin 15s linear infinite;
-  pointer-events: none
+  pointer-events: none;
 }
 
 @keyframes spin {
@@ -184,20 +189,20 @@ main {
 
 
 /* ABOUT SECTION */
-#about {
-  margin: 7rem auto;
+#about, #contact{
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-#about  h2 {
+#about  h2, #contact h2{
   color: #04483D;
   font-size: 2rem;
 }
 
-#about article{
+#about article, #contact article{
   margin-top: 4rem;
   display: flex;
   gap: 2rem;
@@ -206,24 +211,24 @@ main {
   flex-wrap: wrap;
 }
 
-#about .about-content {
+#about .about-content, #contact .contact-content{
   max-width: 500px;
 }
 
 
-#about .about-content strong{
+#about .about-content strong, #contact .contact-content strong{
   font-weight: bold;
   color: #FE9000;
   display: block;
 }
 
-#about .about-content h3{
+#about .about-content h3, #contact .contact-content h3{
   font-size: 1.5rem;
   color: #04483D;
   margin-top: 1rem;
 }
 
-#about .about-content p{
+#about .about-content, #contact .contact-content{
   font-size: 14px;
   color: #04483D;
   margin-top: 1rem;
@@ -248,7 +253,7 @@ main {
   color: white;
 }
 
-#about  img {
+#about  img, #contact  img{
   max-width: 100%;
   width: 100%;
   border-radius: 2rem;
@@ -329,7 +334,7 @@ footer > small {
     max-width: 650px;
   }
   
-  #about  img {
+  #about  img, #contact img {
     max-width: 500px;
     width: 100%;
     border-radius: 2rem;
@@ -390,6 +395,10 @@ footer > small {
 
   .dish-card {
     max-width: 310px;
+  }
+
+  #about, #contact{
+    margin: 4rem auto;
   }
 
   footer {
