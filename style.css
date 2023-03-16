@@ -53,16 +53,15 @@ nav ul {
 }
 
 nav ul li a {
-  color: #04483D;
+  color: #04483d;
   font-weight: 600;
   border: none;
   transition: 0.2s all ease;
 }
 
 nav ul li a:hover {
-  color: #FE9000;
+  color: #fe9000;
 }
-
 
 /* MAIN CONTENT */
 
@@ -73,7 +72,7 @@ main {
 }
 
 .promotional-banner {
-  background: linear-gradient(100.9deg, #04483D 1.7%, #087664 100.42%);
+  background: linear-gradient(100.9deg, #04483d 1.7%, #087664 100.42%);
   border-radius: 2.5rem;
   padding: 1.5rem;
   margin-bottom: 15rem;
@@ -84,20 +83,20 @@ main {
 }
 
 .banner-content p {
-   margin-top: 1.5rem;
-   color: #e2e2e2;
-   font-size: 12px;
+  margin-top: 1.5rem;
+  color: #e2e2e2;
+  font-size: 12px;
 }
 
 .banner-content > input {
-  margin-top: 2rem;  
-  background: #FFFFFF;
+  margin-top: 2rem;
+  background: #ffffff;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   border-radius: 90px;
   border: none;
   padding: 1rem 1rem 1rem 2.5rem;
   width: 100%;
-  background: #FFFFFF url(./assets/search.png) no-repeat left center;
+  background: #ffffff url(./assets/search.png) no-repeat left center;
   background-position-x: 15px;
 }
 
@@ -117,7 +116,6 @@ main {
   }
 }
 
-
 /* DISH CARDS - MENU SECTION*/
 
 .menu-container {
@@ -131,13 +129,13 @@ main {
 }
 
 .dish-card {
-  background-color: #04483D;
+  background-color: #04483d;
   border-radius: 2rem;
   padding: 1.5rem;
   position: relative;
 }
 
-.dish-card > img{
+.dish-card > img {
   position: absolute;
   width: 282px;
   margin: 0 auto;
@@ -151,26 +149,26 @@ main {
   height: 100px;
 }
 
-.dish-name{
+.dish-name {
   margin-top: 2rem;
   display: block;
   color: white;
 }
 
-.dish-card .dish-stars{
+.dish-card .dish-stars {
   margin: 0.5rem 0;
 }
 
-.dish-card .dish-description{
-  color: #DADADA;
+.dish-card .dish-description {
+  color: #dadada;
   font-size: 12px;
   font-weight: 500;
   text-align: justify;
 }
 
-.read-more-btn{  
+.read-more-btn {
   margin-top: 1.5rem;
-  background: #FE9000;
+  background: #fe9000;
   box-shadow: 0px 3.15758px 3.15758px rgba(0, 0, 0, 0.25);
   padding: 0.8rem;
   border-radius: 2rem;
@@ -179,17 +177,17 @@ main {
   font-size: 12px;
   max-width: 120px;
   text-align: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.read-more-btn:hover{  
-  background: #FFFFFF;
-  color: #FE9000;
+.read-more-btn:hover {
+  background: #ffffff;
+  color: #fe9000;
 }
-
 
 /* ABOUT SECTION */
-#about, #contact{
+#about,
+#contact {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -197,12 +195,14 @@ main {
   flex-direction: column;
 }
 
-#about  h2, #contact h2{
-  color: #04483D;
+#about h2,
+#contact h2 {
+  color: #04483d;
   font-size: 2rem;
 }
 
-#about article, #contact article{
+#about article,
+#contact article {
   margin-top: 4rem;
   display: flex;
   gap: 2rem;
@@ -211,32 +211,35 @@ main {
   flex-wrap: wrap;
 }
 
-#about .about-content, #contact .contact-content{
+#about .about-content,
+#contact .contact-content {
   max-width: 500px;
 }
 
-
-#about .about-content strong, #contact .contact-content strong{
+#about .about-content strong,
+#contact .contact-content strong {
   font-weight: bold;
-  color: #FE9000;
+  color: #fe9000;
   display: block;
 }
 
-#about .about-content h3, #contact .contact-content h3{
+#about .about-content h3,
+#contact .contact-content h3 {
   font-size: 1.5rem;
-  color: #04483D;
+  color: #04483d;
   margin-top: 1rem;
 }
 
-#about .about-content, #contact .contact-content{
+#about .about-content,
+#contact .contact-content {
   font-size: 14px;
-  color: #04483D;
+  color: #04483d;
   margin-top: 1rem;
 }
 
-.learn-more-btn{  
+.learn-more-btn {
   margin-top: 2rem;
-  background: #FE9000;
+  background: #fe9000;
   box-shadow: 0px 3.15758px 3.15758px rgba(0, 0, 0, 0.25);
   padding: 0.8rem;
   border-radius: 2rem;
@@ -245,20 +248,20 @@ main {
   font-size: 12px;
   max-width: 120px;
   text-align: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.learn-more-btn:hover{  
-  background: #04483D;
+.learn-more-btn:hover {
+  background: #04483d;
   color: white;
 }
 
-#about  img, #contact  img{
+#about img,
+#contact img {
   max-width: 100%;
   width: 100%;
   border-radius: 2rem;
 }
-
 
 /* FOOTER */
 
@@ -268,7 +271,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background: linear-gradient(100.9deg, #F3F3F3 1.7%, #E9E9E9 100.42%);
+  background: linear-gradient(100.9deg, #f3f3f3 1.7%, #e9e9e9 100.42%);
   border-radius: 42px 42px 0px 0px;
   height: 200px;
 
@@ -279,7 +282,7 @@ footer {
 }
 
 footer > small {
-  color: #04483D;
+  color: #04483d;
   font-weight: bold;
 }
 
@@ -290,13 +293,13 @@ footer > small {
   main {
     max-width: 500px;
   }
-  
+
   .promotional-banner {
     padding: 3rem;
   }
 
   .banner-content h2 {
-    font-size: 2.375rem
+    font-size: 2.375rem;
   }
 
   .banner-content p {
@@ -309,11 +312,11 @@ footer > small {
   }
 
   .banner-image > img {
-      margin-top: 3rem;
-      width: 100%;
+    margin-top: 3rem;
+    width: 100%;
   }
 
-  .dish-card > img{
+  .dish-card > img {
     position: absolute;
     width: 282px;
     margin: 0 0;
@@ -333,8 +336,9 @@ footer > small {
   main {
     max-width: 650px;
   }
-  
-  #about  img, #contact img {
+
+  #about img,
+  #contact img {
     max-width: 500px;
     width: 100%;
     border-radius: 2rem;
@@ -351,7 +355,7 @@ footer > small {
   main {
     max-width: 980px;
   }
-  
+
   .promotional-banner {
     padding: 2rem;
     display: flex;
@@ -378,7 +382,7 @@ footer > small {
   }
 
   .banner-image > img {
-      width: 100%;
+    width: 100%;
   }
 
   .menu-container {
@@ -386,8 +390,8 @@ footer > small {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap:1rem;
-  }  
+    gap: 1rem;
+  }
 
   .menu:last-child {
     margin-bottom: 0;
@@ -396,8 +400,8 @@ footer > small {
   .dish-card {
     max-width: 310px;
   }
-  
-  .dish-card > img{
+
+  .dish-card > img {
     position: absolute;
     width: 282px;
     margin: 0 auto;
@@ -406,9 +410,8 @@ footer > small {
     right: 0;
   }
 
-
-
-  #about, #contact{
+  #about,
+  #contact {
     margin: 4rem auto;
   }
 
@@ -422,7 +425,7 @@ footer > small {
   main {
     max-width: 1080px;
   }
-  
+
   .promotional-banner {
     padding: 2rem;
     display: flex;
@@ -449,7 +452,7 @@ footer > small {
   }
 
   .banner-image > img {
-      width: 100%;
+    width: 100%;
   }
 
   .menu-container {
@@ -457,22 +460,22 @@ footer > small {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap:1rem;
-  }  
+    gap: 1rem;
+  }
 
   .dish-card {
     max-width: 340px;
   }
 
-  #about .about-content h3{
+  #about .about-content h3 {
     font-size: 2rem;
   }
-  
-  #about .about-content p{
+
+  #about .about-content p {
     font-size: 1rem;
   }
 
-  .dish-card > img{
+  .dish-card > img {
     position: absolute;
     width: 282px;
     margin: 0 auto;
@@ -480,7 +483,6 @@ footer > small {
     left: 0;
     right: 0;
   }
-
 
   footer {
     max-width: 1080px;
